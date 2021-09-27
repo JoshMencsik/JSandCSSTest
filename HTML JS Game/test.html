@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Rogue Test</title>
+    <style>
+        html {
+            overflow: auto;
+            --h1: rgb(83, 83, 83);
+
+        }
+        body {
+            background-color: rgb(53, 53, 53);
+        }
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 46%;
+            font-size: 44px;
+            text-align: center;
+            color: rgb(65, 12, 12);
+            text-shadow: -2px 1px black;
+
+        }
+        canvas {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shade</h1>
+    
+    <p id="charSelect">Choose a character</p>
+
+    <div class="button-container">
+        <button type="button" class="mage" onclick="mage()">Mage</button>
+        <button type="button" onclick="knight()">Knight</button>
+        <button type="button" onclick="rogue()">Rogue</button>
+    </div>
+
+    <canvas id="board" height="550" width="1380"></canvas>
+    <!--<p id="log">Text Log: </p> this code is for input tester-->
+
+    <script src="test.js"></script>
+</body>
+</html>
